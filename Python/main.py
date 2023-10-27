@@ -20,10 +20,13 @@ def show_all():
 
 def edit_note():
     print("Note editor activated...")
-    note_edit_id = int(input("Enter note id to be edited: "))
-    notebook.show_note(note_edit_id)
-    notebook.edit_note(note_edit_id)
-    save_notebook()
+    try:
+        note_edit_id = int(input("Enter note id to be edited: "))
+        notebook.show_note(note_edit_id)
+        notebook.edit_note(note_edit_id)
+        save_notebook()
+    except ValueError:
+        print("Oops!  That was no valid number.")
 
 
 def delete_note():
