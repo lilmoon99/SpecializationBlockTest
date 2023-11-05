@@ -35,11 +35,10 @@ public class Toy implements Comparable<Toy>{
 
     @Override
     public String toString() {
-        return "Toy{" +
+        return "Toy:" +
                 "id=" + id +
                 ", rate=" + rate +
-                ", name='" + name + '\'' +
-                '}';
+                ", name='" + name + "\n";
     }
 
     @Override

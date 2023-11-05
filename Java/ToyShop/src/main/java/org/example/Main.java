@@ -1,5 +1,9 @@
 package org.example;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -11,6 +15,10 @@ public class Main {
         lottery.addToy(toy1);
         lottery.addToy(toy2);
         lottery.addToy(toy3);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(lottery.getToy());
+            System.out.println(lottery.getToysWithTrueRate());
+        }
 
     }
 }
