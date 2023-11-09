@@ -41,7 +41,7 @@ public class Main {
 
     private static void chancePrinter(Lottery lottery) {
         System.out.println("Вероятность выпадения игрушек: ");
-        lottery.printToyRates();
+        lottery.updateOverallRate().forEach(System.out::println);
     }
 
     private static void initToys(Lottery lottery) {
